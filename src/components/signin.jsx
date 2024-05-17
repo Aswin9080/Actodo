@@ -20,7 +20,7 @@ function Sigin(props) {
     function resultjoin(){
         Rset([...Ruser,{username:username,password:pass}])
         window.alert('thank you for sigin....please login')
-        navigate('/login')
+        navigate('/App',{state:{usename:username}})
     }
 
 

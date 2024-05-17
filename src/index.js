@@ -28,11 +28,12 @@ function Result() {
         <Link to={'/sigin'}></Link>
         <Link to={'/login'}></Link>
         <Link to={'/App'}></Link>
+        
         <Routes>
-          <Route path='/Sigin' element={<Sigin Ruser={Ruser} Rset={Rset} ></Sigin>}></Route>
-          <Route path='/Login' element={<Login  Ruser={Ruser} Rset={Rset}></Login>}></Route>
+          <Route path='/sigin' element={<Sigin Ruser={Ruser} Rset={Rset} ></Sigin>}></Route>
+          <Route path='/login' element={<Login  Ruser={Ruser} Rset={Rset}></Login>}></Route>
           <Route path='/App' element={<App></App>}></Route>
-
+          <Route path='/' element={<Login  Ruser={Ruser} Rset={Rset}></Login>}></Route>
         </Routes>
       </BrowserRouter >
     </div>
